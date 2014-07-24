@@ -409,6 +409,9 @@ a:active {
 	display: block;
 	text-decoration: none;
 }
+.main-navigation a:hover {
+	text-decoration: underline;
+}
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
@@ -665,10 +668,6 @@ img {
 	max-width: 100%;
 }
 
-img.aligncenter {
-	margin: 1em auto;
-}
-
 .site-branding img {
 	margin: 0 auto;
 	display: block;
@@ -693,6 +692,10 @@ img.aligncenter {
 .highlights img {
 	float: left;
 	margin-bottom: 1.5em;
+}
+
+img.aligncenter {
+	margin: 1em auto;
 }
 
 /*--------------------------------------------------------------
@@ -752,45 +755,10 @@ img.aligncenter {
 .gallery-caption {}
 
 /*--------------------------------------------------------------
-Footer
---------------------------------------------------------------*/
-
-footer a, footer a:visited {
-	color: #fffac1;
-}
-
-footer a:hover {
-	color: #fff;
-	text-decoration: underline;
-}
-
-footer nav {
-	margin: 1em 0 3em 0;
-}
-
-footer a {
-	color: #fffac1;
-	text-decoration: none;
-}
-
-footer .menu li {
-	display: inline;
-}
-
-footer .menu li a {
-	border-right: solid 2px #fff;
-	color: #fffac1;
-	padding: 0 0.75em;
-}
-footer .menu li:last-child a {
-	border-right: none;
-}
-
-/*--------------------------------------------------------------
 Headings 
 --------------------------------------------------------------*/
 
-h1.entry-title {
+h1.entry-title, .error-404 h1 {
 	letter-spacing: -1px;
 	text-align: left;
 	font-size: 2.4em;
@@ -825,6 +793,41 @@ h5 a, div a {
 	font-weight: bold;
 	color: #2d592b;
 	text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+Footer
+--------------------------------------------------------------*/
+
+footer a, footer a:visited {
+	color: #fffac1;
+}
+
+footer a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+footer nav {
+	margin: 1em 0 3em 0;
+}
+
+footer a {
+	color: #fffac1;
+	text-decoration: none;
+}
+
+footer .menu li {
+	display: inline;
+}
+
+footer .menu li a {
+	border-right: solid 2px #fff;
+	color: #fffac1;
+	padding: 0 0.75em;
+}
+footer .menu li:last-child a {
+	border-right: none;
 }
 
 
@@ -879,7 +882,7 @@ Layout
 	position: relative;
 }
 
-main article {
+main article, .error-404  {
 	float: right;
 	padding: 20px 40px 20px 45px;
 	width: 80%;
