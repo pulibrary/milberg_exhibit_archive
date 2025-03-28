@@ -5,7 +5,7 @@ FROM nginx:latest
 RUN mkdir -p /usr/share/nginx/html/www
 
 # Copy the _site directory into the newly created www directory
-COPY . /usr/share/nginx/html/www
+COPY ./_site /usr/share/nginx/html/www
 
 # Copy the custom nginx configuration file
 COPY default.conf /etc/nginx/conf.d/default.conf
