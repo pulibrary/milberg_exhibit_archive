@@ -1,8 +1,8 @@
 #!/bin/bash
 ENV=$1
 BRANCH_NAME="${BRANCH:-main}"
-REPOSITORY="${REPO:-pcdm.org}"
-JOB_NAME="${JOBNAME:-pcdm.org}"
+REPOSITORY="${REPO:-milberg_exhibit_archive}"
+JOB_NAME="${JOBNAME:-milberg_exhibit_archive}"
 
 # Make sure we're on VPN
 if ! nslookup nomad-host-prod1.lib.princeton.edu 2>&1 >/dev/null; then
