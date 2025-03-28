@@ -18,7 +18,7 @@ job "milberg-staging" {
     task "webserver" {
       driver = "podman"
       config {
-        image = "ghcr.io/pulibrary/milberg:${ var.branch_or_sha }"
+        image = "ghcr.io/pulibrary/milberg_exhibit_archive:${ var.branch_or_sha }"
         ports = ["http"]
         force_pull = true
       }
